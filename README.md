@@ -26,7 +26,7 @@ $ python3 -m resource <porta>
 $ python3 -m node <endereco_coordenador> <endereco_recurso>
 ```
 
-#### Exemplo
+### Exemplo
 
 ```sh
 $ python3 -m coordinator 5666
