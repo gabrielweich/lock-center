@@ -14,7 +14,7 @@ def parse_args():
 
 COORD_HOST, RES_HOST = parse_args()
 
-ITERATIONS = 5
+ITERATIONS = 50
 
 
 try:
