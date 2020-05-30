@@ -1,4 +1,3 @@
-import socket
 import sys
 import os
 from xmlrpc.server import SimpleXMLRPCServer
@@ -30,7 +29,6 @@ class Resource:
 
     @staticmethod
     def write(number):
-        print(number)
         with open(RES_PATH, 'a') as f:
             f.write('\n' + str(number))
 
