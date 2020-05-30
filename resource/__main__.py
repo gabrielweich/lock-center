@@ -38,10 +38,9 @@ class Resource:
 
 
 try:
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        with SimpleXMLRPCServer((RES_HOST, RES_PORT)) as server:
-            server.register_instance(Resource())
-            print('resource listening in {} port {}'.format(RES_HOST, RES_PORT))
-            server.serve_forever()
+    with SimpleXMLRPCServer((RES_HOST, RES_PORT)) as server:
+        server.register_instance(Resource())
+        print('resource listening in {} port {}'.format(RES_HOST, RES_PORT))
+        server.serve_forever()
 except KeyboardInterrupt:
     print("closed")
