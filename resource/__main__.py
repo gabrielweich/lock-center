@@ -22,9 +22,7 @@ class Resource:
     def read():
         with open(RES_PATH, 'r') as f:
             lines = f.read().splitlines()
-            print(lines)
             last_line = lines[-1]
-            print(last_line)
             return int(last_line)
 
     @staticmethod
